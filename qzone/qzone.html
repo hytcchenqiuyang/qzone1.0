@@ -1,0 +1,698 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="QQ空间"/>
+	<meta name="description" content="QQ空间,黄钻,免费装扮,开心农场,QQ农场,QQ牧场"/>
+	<link rel="stylesheet" type="text/css" href="css/normal.css">
+	<link rel="stylesheet" type="text/css" href="css/qzone.css">
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/qzone.js"></script>
+	<title>qzone</title>
+</head>
+<body>
+	<div class="top-fix-bar">
+		<div id="top" >
+			<a class="logo" href="#" title="QQ空间">QQ空间</a>
+			<ul class="top-nav">
+				<li class="nav-list" id="tb_ic_li">
+					<div class="nav-list-inner">                            
+						<a id="aIcenter" class="nav-hover" href="#" accesskey="1">
+							<i class="ui-icon icon-icenter"></i>
+							<span>个人中心</span>
+						</a>                        
+					</div>
+				</li>
+				<li class="nav-list" id="tb_index_li">
+					<div class="nav-list-inner">                            
+						<a id="aMainPage" class="homepage-link a-link" href="#" accesskey="z">
+							<i class="ui-icon icon-homepage"></i>
+							<span>我的主页</span>
+							<i class="drop-down-arrow1"></i>
+						</a>                        
+					</div>
+					<div class="nav-drop-down" id="tb_menu_panel" style="display:none;">                            
+						<div class="side-area">                                
+							<div class="homepage-link">                                    
+								<a class="link-icon" href="http://user.qzone.qq.com/874376118/main">
+									<i class="icon-homepage"></i>
+								</a>                                    
+								<a class="link-text" href="http://user.qzone.qq.com/874376118/main">主页</a>                                
+							</div>                            
+						</div>                            
+						<div class="main-area">                                
+							<div class="main-application">                                    
+								<ul class="main-application-list clearfix" id="tb_menu_list">                                        
+									<li class="menu_item_2">                                            
+										<a href="javascript:;">
+											<i class="icon-blog"></i>
+										</a>                                            
+										<a class="app-name">日志</a>                                        
+									</li>                                        
+									<li class="menu_item_4">                                            
+										<a href="javascript:;">
+											<i class="icon-album"></i>
+										</a>                                            
+										<a class="app-name">相册</a>                                        
+									</li>                                        
+									<li class="menu_item_311">                                            
+										<a href="javascript:;">
+											<i class="icon-say"></i>
+										</a>                                            
+										<a class="app-name">说说</a>                                        
+									</li>                                        
+									<li class="menu_item_202">                                            
+										<a href="javascript:;">
+											<i class="icon-share"></i>
+										</a>                                            
+										<a class="app-name">分享</a>                                        
+									</li>                                        
+									<li class="menu_item_219">                                            
+										<a href="javascript:;">
+											<i class="icon-timeline"></i>
+										</a>                                            
+										<a class="app-name">时光轴</a>                                        
+									</li>                                        
+									<li class="menu_item_847">                                            
+										<a href="javascript:;">
+											<i class="icon-video"></i>
+										</a>                                            
+										<a class="app-name">视频</a>                                        
+									</li>                                        
+									<li class="menu_item_305">                                            
+										<a href="javascript:;">
+											<i class="icon-music"></i>
+										</a>                                            
+										<a class="app-name">音乐</a>                                        
+									</li>                                        
+									<li class="menu_item_334">                                            
+										<a href="javascript:;">
+											<i class="icon-message-book"></i>
+										</a>                                            
+										<a class="app-name">留言板</a>                                        
+									</li>                                        
+									<li class="menu_item_1">                                            
+										<a href="javascript:;">
+											<i class="icon-personal"></i>
+										</a>                                            
+										<a class="app-name">个人档</a>                                        
+									</li>                                         
+									<li class="menu_item_907">                                             
+										<a href="javascript:;">
+											<i class="icon-collect"></i>
+										</a>                                             
+										<a class="app-name">收藏</a>                                        
+									</li>                                    
+								</ul>                                
+							</div>                            
+						</div>                        
+					</div>
+				</li>
+				<li class="nav-list" id="tb_friend_li">
+					<div class="nav-list-inner">
+						<a id="aMyFriends" href="#" class="friends-link a-link current">
+							<i class="ui-icon icon-friend"></i>
+							<span>好友</span>
+							<i class="drop-down-arrow"></i>
+						</a>
+					</div>
+					<div class="nav-drop-down friends-drop-down" id="friends-drop-down" style="display:none;">
+						<div class="side-area">
+							<div class="friends-link">
+								<a href="javascript:" class="link-icon">
+									<i class="icon-friends"></i>
+								</a>
+								<a href="javascript:" class="link-text">寻找好友</a>
+							</div>
+							<div class="friends-relation">
+								<a href="javascript:" class="link-icon">
+									<i class="icon-relation"></i>
+								</a>
+								<a href="javascript:" class="link-text">亲密度</a>
+							</div>
+						</div>
+						<div class="main-area">        
+							<div class="mod-friends-topbar">
+								<div class="inner">
+									<div class="hd">
+										<h3>最近联络的好友</h3>
+										<div class="friends-search-topbar ">
+											<input type="text" placeholder="搜索好友" id="friend_search_input">
+											<button>
+												<i class="ui-icon sp-top-search"></i>
+											</button>
+										</div>
+										<div class="friends-results-topbar" style="display:none">
+											<ul class="results-list-topbar qz-scrollbar" id="search_friend_result"></ul>
+											<p class="null" style="display:none">没有找到相关用户</p>
+										</div>
+									</div>
+									<div class="bd">
+										<ul class="friends-list-topbar clearfix" id="friends-list-topbar">
+											<li>
+												<a href="#" target="_blank" class="pic">
+													<img src="http://qlogo3.store.qq.com/qzone/765843398/765843398/100?1385182325" alt="冯莹的头像" title="你最近看过的好友">
+													<span class="name ellipsis">冯莹</span>
+												</a>
+												<a class="number" href="#" target="_blank">
+													<i class="ui-icon icon-relation"></i>
+													85
+												</a>
+											</li>
+											<li>
+												<a href="#" target="_blank" class="pic">
+													<img src="http://qlogo2.store.qq.com/qzone/841424933/841424933/100?1269078898" alt="吴冬冬的头像" title="你最近看过的好友">
+													<span class="name ellipsis">吴冬冬</span>
+												</a>
+												<a class="number" href="http://user.qzone.qq.com/841424933/friendship?fuin=841424933" target="_blank">
+													<i class="ui-icon icon-relation"></i>
+													76
+												</a>
+											</li>
+											<li>
+												<a href="#" target="_blank" class="pic">
+													<img src="http://qlogo4.store.qq.com/qzone/1427763111/1427763111/100?1352038605" alt="顾圣颖的头像" title="你最近看过的好友">
+													<span class="name ellipsis">顾圣颖</span>
+												</a>
+												<a class="number" href="#" target="_blank">
+													<i class="ui-icon icon-relation"></i>
+													66
+												</a>
+											</li>
+											<li>
+												<a href="#" target="_blank" class="pic">
+													<img src="http://qlogo4.store.qq.com/qzone/407498779/407498779/100?1366676152" alt="刘华旭的头像" title="你最近看过的好友">
+													<span class="name ellipsis">刘华旭</span>
+												</a>
+												<a class="number" href="http://user.qzone.qq.com/407498779/friendship?fuin=407498779" target="_blank">
+													<i class="ui-icon icon-relation"></i>
+													57
+												</a>
+											</li>
+											<li>
+												<a href="#" target="_blank" class="pic">
+													<img src="http://qlogo1.store.qq.com/qzone/1176712444/1176712444/100?1396443136" alt="王亚娥的头像" title="你最近看过的好友">
+													<span class="name ellipsis">王亚娥</span>
+												</a>
+												<a class="number" href="http://user.qzone.qq.com/1176712444/friendship?fuin=1176712444" target="_blank">
+													<i class="ui-icon icon-relation"></i>
+													63
+												</a>
+											</li>
+											<li>
+												<a href="#" target="_blank" class="pic">
+													<img src="http://qlogo3.store.qq.com/qzone/472254954/472254954/100?1311420947" alt="胡奇的头像" title="你最近看过的好友">
+													<span class="name ellipsis">胡奇</span>
+												</a>
+												<a class="number" href="#" target="_blank">
+													<i class="ui-icon icon-relation"></i>
+													59
+												</a>
+											</li>
+											<li>
+												<a href="#" target="_blank" class="pic">
+													<img src="http://qlogo1.store.qq.com/qzone/820545840/820545840/100?1364616769" alt="徐栋昌的头像" title="你最近看过的好友">
+													<span class="name ellipsis">徐栋昌</span>
+												</a>
+												<a class="number" href="#" target="_blank">
+													<i class="ui-icon icon-relation"></i>
+													56
+												</a>
+											</li>
+											<li>
+												<a href="#" target="_blank" class="pic">
+													<img src="http://qlogo4.store.qq.com/qzone/1178789503/1178789503/100?1402801298" alt="赵冬伟的头像" title="你最近看过的好友">
+													<span class="name ellipsis">赵冬伟</span>
+												</a>
+												<a class="number" href="#" target="_blank">
+													<i class="ui-icon icon-relation"></i>
+													56
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="ft"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="nav-list" id="tb_app_li">                        
+						<div class="nav-list-inner">                            
+							<a id="aAppstore" href="#" class="application-link a-link current">
+								<i class="ui-icon icon-application"></i>
+								<span>应用</span>
+								<i class="drop-down-arrow"></i>
+							</a>                        
+						</div>                                                
+						<div class="nav-drop-down application-drop-down application-drop-down-more" id="tb_app_wall" style="display: none;">                            
+							<div class="side-area">                                
+								<div class="application-center">                                    
+									<a class="link-icon" href="#">
+										<i class="icon-app-center"></i>
+									</a>                                    
+									<a class="link-text" href="#">应用中心</a>                                
+								</div>                            
+								<div class="application-gift">								
+									<a href="#" onclick="" class="link-icon">
+										<i class="icon-gift"></i>
+										<i class="icon-prize"></i>
+									</a>								
+									<a href="#" onclick="" class="link-text">每日礼包</a>						
+								</div>
+								<div class="all-application">		                    
+									<a href="#" class="link-icon">
+										<i class="icon-app"></i>
+									</a>		                    
+									<a href="#" class="link-text">全部应用</a>		                
+								</div>
+							</div>                            
+							<div class="main-area">                                
+								<div class="main-application">                                    
+									<ul id="tb_recent_app_list" class="main-application-list clearfix">
+										<li appid="333">
+											<a href="#" isrecommend="0" appid="333" _via="" _click="" _gdtjumpurl="" class="icon-wrapper">
+												<img src="http://ctc.i.gtimg.cn/open/app_icon/00/00/03/33/333_50.png">
+											</a>
+											<a class="app-name textoverflow" href="javascript:;" appid="333" isrecommend="0">礼物</a>
+											<a class="del-btn" href="#" title="删除该应用">×</a>
+										</li>
+										<li appid="348">
+											<a href="#" isrecommend="0" appid="348" _via="" _click="" _gdtjumpurl="" class="icon-wrapper">
+												<img src="http://ctc.i.gtimg.cn/open/app_icon/00/00/03/48/348_50.png">
+											</a>
+											<a class="app-name textoverflow" href="javascript:;" appid="348" isrecommend="0">花藤</a>
+											<a class="del-btn" href="#" title="删除该应用">×</a>
+										</li>
+										<li appid="100622432">
+											<a href="#" isrecommend="0" appid="100622432" _via="" _click="" _gdtjumpurl="" class="icon-wrapper">
+												<img src="http://ctc.i.gtimg.cn/open/app_icon/00/62/24/32/100622432_50.png">
+											</a>
+											<a class="app-name textoverflow" href="javascript:;" appid="100622432" isrecommend="0">QQ情侣</a>
+											<a class="del-btn" href="#" title="删除该应用">×</a>
+										</li>
+										<li appid="21641">
+											<a href="#" isrecommend="0" appid="21641" _via="" _click="" _gdtjumpurl="" class="icon-wrapper">
+												<img src="http://ctc.i.gtimg.cn/open/app_icon/00/02/16/41/21641_50.png">
+											</a>
+											<a class="app-name textoverflow" href="javascript:;" appid="21641" isrecommend="0">QQ超市</a>
+											<a class="del-btn" href="#" title="删除该应用">×</a>
+										</li>
+										<li appid="353">
+											<a href="#" isrecommend="0" appid="353" _via="" _click="" _gdtjumpurl="" class="icon-wrapper">
+												<img src="http://ctc.i.gtimg.cn/open/app_icon/00/00/03/53/353_50.png">
+											</a>
+											<a class="app-name textoverflow" href="javascript:;" appid="353" isrecommend="0">QQ农场</a>
+											<a class="del-btn" href="#" title="删除该应用">×</a>
+										</li>
+										<li appid="358">
+											<a href="#" isrecommend="0" appid="358" _via="" _click="" _gdtjumpurl="" class="icon-wrapper">
+												<img src="http://ctc.i.gtimg.cn/open/app_icon/00/00/03/58/358_50.png">
+											</a>
+											<a class="app-name textoverflow" href="javascript:;" appid="358" isrecommend="0">QQ牧场</a>
+											<a class="del-btn" href="#" title="删除该应用">×</a>
+										</li>
+										<li appid="382">
+											<a href="#" isrecommend="0" appid="382" _via="" _click="" _gdtjumpurl="" class="icon-wrapper">
+												<img src="http://ctc.i.gtimg.cn/open/app_icon/00/00/03/82/382_50.png">
+											</a>
+											<a class="app-name textoverflow" href="javascript:;" appid="382" isrecommend="0">QQ斗地主</a>
+											<a class="del-btn" href="#" title="删除该应用">×</a>
+										</li>
+										<li appid="100666811">
+											<a href="#" isrecommend="0" appid="100666811" class="icon-wrapper"><img src="http://ctc.i.gtimg.cn/open/app_icon/00/66/68/11/100666811_50.png">
+												<span class="icon-popularize"></span>
+											</a>
+											<a class="app-name textoverflow" href="#" appid="100666811" isrecommend="1">六界仙尊</a>
+										</li>
+										<li appid="100700930">
+											<a href="#" isrecommend="1" appid="100700930" class="icon-wrapper"><img src="http://ctc.i.gtimg.cn/open/app_icon/00/70/09/30/100700930_50.png">
+												<span class="icon-popularize"></span>
+											</a>
+											<a class="app-name textoverflow" href="#" appid="100700930" isrecommend="1">烈火屠龙</a>
+										</li>
+										<li appid="100718848">
+											<a href="#" isrecommend="2" appid="100718848" class="icon-wrapper">
+												<img src="http://ctc.i.gtimg.cn/open/app_icon/00/71/88/48/100718848_50.png">
+												<span class="icon-popularize"></span>
+											</a>
+											<a class="app-name textoverflow" href="#" appid="100718848" isrecommend="1">龙骑士传</a>
+										</li>
+										<li appid="1101263981">
+											<a href="#" isrecommend="3" appid="1101263981"class="icon-wrapper"><img src="http://ctc.i.gtimg.cn/open/app_icon/01/26/39/81/1101263981_50.png">
+												<span class="icon-popularize"></span>
+											</a>
+											<a class="app-name textoverflow" href="#" appid="1101263981" isrecommend="1">天命</a>
+										</li>
+										<li appid="1101082222">
+											<a href="#" isrecommend="4" appid="1101082222" class="icon-wrapper"><img src="http://ctc.i.gtimg.cn/open/app_icon/01/08/22/22/1101082222_50.png">
+												<span class="icon-popularize"></span>
+											</a>
+											<a class="app-name textoverflow" href="#" appid="1101082222" isrecommend="1">三国乱世</a>
+										</li>
+									</ul>                                
+								</div>                            
+							</div>                        
+						</div>                    
+				</li>
+				<li class="nav-list" id="tb_dress_li">                        
+						<div class="nav-list-inner">                            
+							<a id="aMall" class="dress-up-link a-link current" href="#">
+								<i class="ui-icon icon-dress-up"></i>
+								<span>装扮</span>
+								<i class="drop-down-arrow"></i>
+							</a>                        
+						</div>                                                
+						<div class="nav-drop-down dress-drop-down" id="tb_dress_panel" style="display:none; background: url(http://ctc.i.gtimg.cn//qzone/space_item/mouseover/m_1408094378.jpg) no-repeat rgb(252, 251, 251);">    
+							<div class="side-area">
+        						<div class="onekey-dress">
+						            <a target="_blank" href="#" class="js-onekeydress-icon link-icon">
+						            	<i class="icon-onekey-dress"></i>
+						            </a>
+						            <a target="_blank" href="#" class="js-onekeydress-link link-text">一键装扮</a>
+						        </div>
+						        <div class="dress-mall">
+						            <a target="_blank" href="http://rc.qzone.qq.com/main/mall?target=mall" class="js-dressmall-icon link-icon">
+						            	<i class="icon-dress-mall"></i>
+						            </a>
+						            <a target="_blank" href="http://rc.qzone.qq.com/main/mall?target=mall" class="js-dressmall-link link-text">装扮商城</a>
+						        </div>
+						    </div>
+						    <div class="main-area">
+						        <div class="dress-box js-main-content">
+						        	<div class="js-topic-list dress-topic"> 
+						        		<a target="_blank" data-index="2" href="#" class="js-dress-class topic-link current">原宿の星空</a>
+						        		<span class="sep-line"></span>
+						        		<a target="_blank" data-index="1" href="#" class="js-dress-class topic-link ">千年之恋</a>
+						        		<span class="sep-line"></span>
+						        		<a target="_blank" data-index="3" href="#" class="js-dress-class topic-link ">盛夏之诗</a>
+						        		<span class="sep-line"></span>
+						        		<a target="_blank" data-index="0" href="#" class="js-dress-class topic-link ">哥特魅影</a>
+						        	</div>
+						        	<ul class="js-dress-list dress-list" data-index="0" style="display: none;">    
+						        		<li>
+						        			<a target="_blank" href="#" class="js-dress-item dress-item">
+						        				<img src="http://ctc.qzonestyle.gtimg.cn/qzone/space_item/pre/0/102432_2.gif" alt="">
+						        			</a>
+						        		</li>    
+						        		<li>
+						        			<a target="_blank" href="#" class="js-dress-item dress-item">
+						        				<img src="http://ctc.qzonestyle.gtimg.cn/qzone/space_item/pre/5/102389_2.gif" alt="">
+						        			</a>
+						        		</li>    
+						        		<li>
+						        			<a target="_blank" href="#" class="js-dress-item dress-item">
+						        				<img src="http://ctc.qzonestyle.gtimg.cn/qzone/space_item/pre/11/102379_2.gif" alt="">
+						        			</a>
+						        		</li>    
+						        		<li>
+						        			<a target="_blank" href="#" class="js-dress-item dress-item">
+						        				<img src="http://ctc.qzonestyle.gtimg.cn/qzone/space_item/pre/15/102399_2.gif" alt="">
+						        			</a>
+						        		</li>
+						        	</ul>        
+						        	<ul class="js-dress-list dress-list" data-index="3" style="display: none;">    
+						        			<li>
+						        				<a target="_blank" href="#" class="js-dress-item dress-item">
+						        					<img src="http://ctc.qzonestyle.gtimg.cn/qzone/space_item/pre/12/102268_2.gif" alt="">
+						        				</a>
+						        			</li>    
+						        			<li>
+						        				<a target="_blank" href="#" class="js-dress-item dress-item">
+						        					<img src="http://ctc.qzonestyle.gtimg.cn/qzone/space_item/pre/2/102258_2.gif" alt="">
+						        				</a>
+						        			</li>    
+						        			<li>
+						        				<a target="_blank" href="#" class="js-dress-item dress-item">
+						        					<img src="http://ctc.qzonestyle.gtimg.cn/qzone/space_item/pre/8/102248_2.gif" alt="">
+						        				</a>
+						        			</li>    
+						        			<li>
+						        				<a target="_blank" href="#" class="js-dress-item dress-item">
+						        					<img src="http://ctc.qzonestyle.gtimg.cn/qzone/space_item/pre/9/102233_2.gif" alt="">
+						        				</a>
+						        			</li>
+						        	</ul>
+						        	<ul class="js-dress-list dress-list" data-index="2">    
+						        			<li>
+						        				<a target="_blank" href="#" class="js-dress-item dress-item">
+						        					<img src="http://ctc.qzonestyle.gtimg.cn/qzone/space_item/pre/12/101228_2.gif" alt="">
+						        				</a>
+						        			</li>    
+						        			<li>
+						        				<a target="_blank" href="#" class="js-dress-item dress-item">
+						        					<img src="http://ctc.qzonestyle.gtimg.cn/qzone/space_item/pre/13/101213_2.gif" alt="">
+						        				</a>
+						        			</li>    
+						        			<li>
+						        				<a target="_blank" href="#" class="js-dress-item dress-item">
+						        					<img src="http://ctc.qzonestyle.gtimg.cn/qzone/space_item/pre/8/101208_2.gif" alt="">
+						        				</a>
+						        			</li>    
+						        			<li>
+						        				<a target="_blank" href="#" class="js-dress-item dress-item">
+						        					<img src="http://ctc.qzonestyle.gtimg.cn/qzone/space_item/pre/2/101218_2.gif" alt="">
+						        				</a>
+						        			</li>
+						        	</ul>
+						        </div>
+							    <a href="#" class="js-dress-recommend-link dress-recommend" target="_blank"></a>
+							</div>
+   							<span class="bottom-line"></span>
+   						</div>                    
+   				</li>	
+			</ul>
+			<div class="music-container" id="tb_music_li" title="点击设置背景音乐">
+				<div class="music-panel">                        
+					<a class="music-play" href="javascript:;">
+						<i class="ui-icon ico-music-play" title="点击设置背景音乐"></i>
+					</a>                        
+					<b class="music-dynamic">
+						<i class="ui-icon ico-music-dynamic" title="点击设置背景音乐" style="cursor: pointer;"></i>
+					</b>                    
+				</div>
+			</div>
+			<div class="top-search">                    
+				<div class="search-box">                        
+					<input class="search-input" type="text" placeholder="用户/应用"><!--搜索框默认态-->                        
+					<a href="javascript:;" class="search-button">
+						<i class="ui-icon icon-search"></i>
+					</a>                    
+				</div>                    
+				<div class="search-drop-down" id="search_smart_panel_navigation_bar" style="display: none;">                        
+					<div id="search_smart_search_loading" class="waiting-box" style="display: none;">                            
+						<img src="http://qzonestyle.gtimg.cn/aoi/img/loading2.gif" alt="等待图标">                        
+					</div>                        
+					<div id="search_smart_search_list">                            
+						<div class="result-box r-modle" style="display: none;">                                
+							<a href="#" class="result-list">                                    
+								<div class="avatar">
+									<i class="ui-icon icon-ts-special"></i>
+								</div>                                    
+								<div class="result-details">                                        
+									<p class="info">特别关心</p>                                    
+								</div>                                
+							</a>                                
+							<a href="#" class="result-list">                                    
+								<div class="avatar">
+									<i class="ui-icon icon-ts-qq"></i>
+								</div>                                    
+								<div class="result-details">                                        
+									<p class="info">可能认识的人</p>                                    
+								</div>                                
+							</a>                                
+							<a href="#" class="result-list">                                    
+								<div class="avatar">
+									<i class="ui-icon icon-ts-approve"></i>
+								</div>                                    
+								<div class="result-details">                                        
+									<p class="info">认证空间</p>                                    
+								</div>                                
+							</a>                                
+							<a href="#" class="result-list">                                    
+								<div class="avatar">
+									<i class="ui-icon icon-ts-app"></i>
+								</div>                                    
+								<div class="result-details">                                        
+									<p class="info">应用</p>                                    
+								</div>                                
+							</a>                            
+						</div>                            
+						<div class="smart-result-list" style="display: none;"></div>                        
+					</div>                        
+					<a id="search_smart_search_more" class="search-for-friends" style="display: none;" href="javascript:;">                            
+						<span>查看更多</span>
+						<i class="more-icon"></i>                        
+					</a>                    
+				</div>                
+			</div>
+			<div class="user-info">                    
+				<a class="user-home" href="#">                        
+					<img class="user-avatar" src="http://qlogo3.store.qq.com/qzone/874376118/874376118/30?1340891447" alt="您的头像">                        
+					<span class="user-name textoverflow">萌妹纸</span>                    
+				</a>
+				<a id="tb_logout" class="logout-new" href="javascript:;" title="退出">
+					<i class="ui-icon aa"></i>
+				</a>                                        
+				<div id="tb_setting_li" class="user-setting">                        
+					<i id="tb_setting_i" class="drop-down-arrow2"></i>                        
+					<div class="user-drop-down" id="tb_setting_panel" style="display: none;">                            
+						<b class="white-line"></b>                            
+						<div class="drop-down-setting">                                
+							<a type="info" href="javascript:;">修改资料</a>                                
+							<a type="dress" href="javascript:;">主页排版</a>                                
+							<a type="set" href="javascript:;">空间设置</a>                                
+							<a type="auth" href="javascript:;">权限设置</a>                            
+						</div>                            
+						<a target="_blank" class="online-service" href="#" id="aHelpCenter">帮助中心</a>                                                        
+						<a href="#" target="_blank" title="意见反馈">意见反馈</a>                        
+					</div>                    
+				</div>                    
+				<a href="#" id="tb_vip_li" target="_blank" class="vip-setting">
+					<i class="ui-icon icon-vip"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="background-container" id="layBackground">
+		<div id="container">
+			<div class="layout-head ">
+	        	<div class="layout-head-inner" id="headContainer">
+	            	<div class="head-info">
+	            		<div class="dragdrop_item_title" style="display: none;">
+	            			<a class="edit_title_link right" href="javascript:;">编辑</a>
+	            		</div>
+	                	<h1 class="head-title" id="top_head_title">
+	                		<span class="title-text ui-mr5">被爱遗忘的角落</span>
+	                		<a href="javascript:;" id="qz-head-level" onclick="">
+	                			<span class="qz_qzone_lv qz_qzone_lv_3 qz_qzone_no_2" title="当前空间等级：43级；积分：13207分">
+	                				<span class="no">
+	                					<b class="d4"></b>
+	                					<b class="d3"></b>
+	                				</span>
+	                			</span>
+	                		</a>
+	                	</h1>
+	                	<div class="head-description">
+	                    	<span class="description-text" id="QZ_Space_Desc"></span>
+	                	</div>
+	           	 	</div>
+	            	<div class="head-name">
+	                	<span class="user-name textoverflow">萌妹纸</span>
+	                	<span class="user-vip-info">
+	                    	<a id="diamon" class="f_user_vip qz_ichotclick " target="_blank" href="#" style="cursor:pointer;" data-isleave="true">
+	                            <i class="qz_vip_icon_l qz_vip_icon_l_gray_1"></i>
+	                        </a> 
+	                        <a class="qz-btn-vip qz-btn-vip-fee" title="续费黄钻" href="h#" target="_blank"></a>
+	                	</span>
+	                    <a onclick="TCISD &amp;&amp; TCISD.hotClick('point_ic_rise', 'flower.qzone.qq.com');" href="#" target="_blank" id="diamon_vip_level_up">
+	                    	<i class="ui_icon icon_vip_level_up_disable"></i>
+	                    </a>
+	            	</div>
+	            
+	            <!--挂件-->
+	            	<div class="layout-shop-item" id="QZ_Shop_Items_Container" style="z-index: 101;">
+	                	<div class="shop-item cs" id="menuContainer" style="width: px; height: 32px; left: 150px; top: 222px; " reged="1">
+	                		<div class="head-nav">
+	                			<ul class="head-nav-menu">
+	                				<li class="menu_item_N1">
+	                					<span class="arr"></span>
+	                					<a href="javascript:;" title="主页" tabindex="1" accesskey="z">主页</a>
+	                				</li>
+	                				<li class="menu_item_2">
+	                					<span class="arr"></span>
+	                					<a href="javascript:;" title="日志" tabindex="1" accesskey="r">日志</a>
+	                				</li>
+	                				<li class="menu_item_4">
+	                					<span class="arr"></span>
+	                					<a href="javascript:;" title="相册" tabindex="1" accesskey="4">相册</a>
+	                				</li>
+	                				<li class="menu_item_334">
+	                					<span class="arr"></span>
+	                					<a href="javascript:;" title="留言板" tabindex="1">留言板</a>
+	                				</li>
+	                				<li class="menu_item_311">
+	                					<span class="arr"></span>
+	                					<a href="javascript:;" title="说说" tabindex="1" accesskey="6">说说</a>
+	                				</li>
+	                				<li class="menu_item_1">
+	                					<span class="arr"></span>
+	                					<a href="javascript:;" title="个人档" tabindex="1" accesskey="1">个人档</a>
+	                				</li>
+	                				<li class="menu_item_305">
+	                					<span class="arr"></span>
+	                					<a href="javascript:;" title="音乐" tabindex="1">音乐</a>
+	                				</li>
+	                				<li class="menu_item_219">
+	                					<span class="arr"></span>
+	                					<a href="javascript:;" title="时光轴" tabindex="1">时光轴</a>
+	                				</li>
+	                				<li class="menu_item_more">
+	                					<span class="arr"></span>
+	                					<a href="javascript:;" title="更多" tabindex="1">更多</a>
+	                				</li>
+	                			</ul>
+	                		</div>
+	                	</div>
+	            		<div class="shop-item" id="weatherDiv" style="top: 30px; left: 790px; width: 200px; height: 56px;">
+	            			<div class="weather-module " id="weather-module">
+	            				<div class="other-info" id="weather-info">				
+	            					<div class="shadow-wrapper city-wrapper" title="淮安" id="weather_city_name">							
+	            						<p class="city textoverflow">淮安</p>							
+	            						<p class="anti-text city textoverflow">淮安</p>							
+	            						<a class="edit-city-button" href="javascript:" style="display: none;" title="修改城市">修改城市</a>				
+	            					</div>               
+	            					<div class="shadow-wrapper date-wrapper">                    
+	            						<p class="date">8月22日</p>                    
+	            						<p class="anti-text date">8月22日</p>                
+	            					</div>            
+	            				</div>            
+	            				<div class="weather-temperature shadow-wrapper">                
+	            					<h5 class="temperature-num">27</h5>				
+	            					<h5 class="anti-text temperature-num">27</h5>                
+	            					<span class="temperature-unit">°</span>				
+	            					<span class="anti-text anti-temperature-unit">°</span>            
+	            				</div>            
+	            				<img class="weather-icon" src="http://ctc.qzonestyle.gtimg.cn/aoi/img/weather/weather-cloudy-sunny.png" alt="" title="多云">
+	            			</div>
+	            		</div>
+	            	</div>
+	    			<div class="actions profile-hd-actions" id="like_button_pannel">   
+	      				<span class="btn-head btn-head-like">
+	            			<a href="javascript:;" class="lnk-left" id="view_like_list" title="0人赞过" style="text-decoration: none;">
+				                <s class="ui-icon sp-btn-like"></s>
+				                <span class="txt">赞(0)</span>
+				                <span class="txt message-num none"></span>
+			            	</a>
+			            	<s class="ui-icon sp-btn-split"></s>
+			            	<a href="http://rc.qzone.qq.com/main/praise" class="lnk-right" target="_blank">
+			                	<span class="txt">求赞</span>
+			            	</a>
+			        	</span>
+			    	</div>
+
+	       		 	<div id="flowerContainerDiv" class="layout-shop-item">
+	       		 		<div class="shop-item animation-shake" style="left: 970px; top: 250px; width: 198px; height: 432px; background-image: url(about:blank);">
+	       		 			<object id="item_90858" name="item_90858" data="http://ctc.qzs.qq.com/qzone/flower/flash/Flower3.swf?max_age=20140605&amp;mode=1" width="100%" height="100%" type="application/x-shockwave-flash">
+	       		 				<param name="allowScriptAccess" value="always">
+	       		 				<param name="allowNetworking" value="all">
+	       		 				<param name="wmode" value="transparent">
+	       		 				<param name="menu" value="false">
+	       		 				<param name="flashVars" value="flowerId=90858&amp;vineId=152&amp;itemtype=2&amp;shapetype=2&amp;uin=874376118&amp;mode=1&amp;vipLevel=1&amp;facadeId=flowerAccessories&amp;selfActive=1&amp;version=8&amp;filePath=http://ctc.qzs.qq.com/qzone/flower/flash&amp;isOwner=1">
+	       		 			</object>
+	       		 		</div>
+	       		 	</div>
+	       		 </div>
+	    	</div>
+		</div>
+
+
+		<div class="content"></div>
+	</div>
+
+
+	<div CLASS="fix-layout"></div>
+</body>
+</html>

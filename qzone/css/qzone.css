@@ -1,0 +1,124 @@
+
+
+
+.top-fix-bar{width:1349px;height:41px;background-color: #607339;}
+#top{width:980px;height:41px;margin:0 auto;}
+.logo{float:left;width:90px;height:41px;background-image:url("images/icenter.32-jan140807095541.png");background-position:-62px 0;line-height:123px;overflow:hidden;}
+.top-nav{width:433px;height:41px;padding-left:10px;float:left;}
+#tb_ic_li{width:91px;height:41px;float:left;background-color:#748c43;}
+#tb_index_li{width:101px;height:41px;float:left;}
+#tb_index_li:hover{background-color:#748c43;}
+#tb_friend_li{width:71px;height:41px;float:left;}
+#tb_friend_li:hover{background-color:#748c43;}
+#tb_app_li{width:71px;height:41px;float:left;}
+#tb_app_li:hover{background-color:#748c43;}
+#tb_dress_li{width:71px;height:41px;float:left;}
+#tb_dress_li:hover{background-color:#748c43;}
+.top-fix-bar a {color: #fff;}
+.top-fix-bar .top-nav .nav-list-inner a {position:relative;display:inline-block;line-height:40px;text-decoration:none;cursor:pointer;margin-top:1px;font-size:12px;}
+.ui-icon{width:16px;height:16px;float: left;margin:12px 8px;}
+.icon-icenter{background-image:url("images/19.32-jan140811165800.png");background-position: -740px -50px;}
+.icon-homepage {background-image: url("images/19.32-jan140811165800.png");background-position: -740px -100px;}
+.icon-friend {background-image: url("images/19.32-jan140811165800.png");background-position: -740px -75px;}
+.icon-application {background-image: url("images//19.32-jan140811165800.png");background-position: -740px -125px;}
+.icon-dress-up {background-image: url("images/19.32-jan140811165800.png");background-position: -740px -150px;}
+
+.icon-homepage:hover {background-image: url("images/19.32-jan140811165800.png");background-position: -790px -25px;}
+.icon-friend:hover {background-image: url("images/19.32-jan140811165800.png");background-position:-790px 0;}
+.icon-application:hover {background-image: url("images/19.32-jan140811165800.png");background-position: -790px -50px;}
+.icon-dress-up:hover {background-image: url("images/19.32-jan140811165800.png");background-position: -790px -75px;}
+.drop-down-arrow {width:0;height:0;font-size:0;border-width:3px;border-style:solid dashed dashed dashed;border-left-color:transparent;border-right-color:transparent;border-bottom-color:transparent;zoom:1;line-height:0;position:absolute;top:19px;left:58px;}
+.drop-down-arrow1 {width:0;height:0;font-size:0;border-width:3px;border-style:solid dashed dashed dashed;border-left-color:transparent;border-right-color:transparent;border-bottom-color:transparent;zoom:1;line-height:0;position:absolute;top:19px;left:88px;}
+
+
+
+.music-panel{width:50px;height:20px;float:left;margin:10px 10px 10px 10px;border-radius:1px;}
+.music-container{width:70px;height: 40px;float:left;}
+.music-container:hover{background:#fff;}
+.music-play{background-color: #748c43;background-image:url("images/19.32-jan140811165800.png");background-position:-765px -25px;float:left;width: 22px;height: 20px;text-align:center;margin-right: 1px;border-radius:1px 1px 1px 1px;}
+.music-dynamic{background-color:#748c43;background-image:url("images//19.32-jan140811165800.png");background-position:-762px -50px;float:left;width: 27px;height: 20px;text-align:center;border-radius:1px 1px 1px 1px;}
+
+
+.top-search {float:left;margin: 9px 0 0 5px;position: relative;}
+.search-box {padding: 2px 0;}
+.search-input {display:inline-block;vertical-align:top;width:105px;height:20px;border:none;border-radius:2px;padding:0 25px 0 5px;background-color:rgba(255,255,255,.25);}
+.search-button {display:inline-block;vertical-align:top;width:24px;height:20px;position:absolute;right:0;top:2px;}
+.icon-search {background-image:url("images/19.32-jan140811165800.png");background-position:-765px -150px;float:left;position:absolute;top:-10px;}
+
+
+
+
+
+.user-info {float:right;line-height:41px;padding-left:10px;font-size:0;white-space:nowrap;width:196px;height:41px;}
+.user-home {padding:0 5px;text-decoration:none;height:41px;max-width:86px;float:left;display:inline-block;font-size: 12px;vertical-align: middle;}
+.user-home:hover{background-color:#748c43;}
+.user-avatar {width:24px;height:24px;margin-right:8px;border-radius:2px;vertical-align:top;margin-top:9px;}
+.ui-icon {width:16px;height:16px;float:left;margin:12px 8px;}
+.textoverflow{display:inline-block;white-space:nowrap;word-wrap:normal;overflow:hidden;text-overflow:ellipsis;max-width:100%;width:100%;}
+.logout-new {width:26px;text-decoration:none;height:41px;margin:0 0 0 4px;display: inline-block;font-size: 12px;vertical-align:middle;float:left;}
+.logout-new:hover{background-color:#748c43;}
+.aa{width:16px;height:16px;margin:13px 0 0 5px;background-image:url("images/19.32-jan140811165800.png");background-position:-765px -75px;}
+
+
+.user-setting{width:26px;height:41px;margin-left:4px;position:relative;cursor:pointer;vertical-align:top;float:left;}
+.drop-down-arrow2{display:inline-block;width:16px;height:16px;margin:13px 0 0 5px;background-image:url("images/19.32-jan140811165800.png");background-position: -765px -100px;}
+.user-drop-down {position: absolute;top: 41px;right: -1px;background-color: #fff;width: 108px;color: #404040;border: #a6a6a6 1px solid;padding: 4px;z-index: 550;}
+.white-line {display: block;position: absolute;width: 27px;height: 1px;font-size: 0;right: 0;top: -1px;background-color: #fff;}
+.drop-down-setting{border-bottom: #ececec 1px solid;padding-bottom: 4px;margin-bottom: 4px;}
+.user-drop-down a {display: block;padding-left: 25px;line-height: 27px;zoom: 1;text-decoration: none;color: #545454;}
+.vip-setting {width: 26px;height: 41px;margin-left: 4px;cursor: pointer;display: inline-block;font-size: 12px;vertical-align: middle;}
+.icon-vip {background-image: url("images/qzone-vip.gif");width: 22px;height: 19px;}
+#tb_vip_li{width:26px;height: 41px;float:left;}
+
+
+
+
+
+#layBackground{width:1349px;height:800px;border-bottom:1px solid #f00;background-image:url("images/1.jpg");background-size:1349px 900px;}
+#container{width:980px;height:800px;margin:0 auto;border:1px solid #ccc;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
